@@ -1,0 +1,65 @@
+QUES: CONVERT STRING INTO INTEGERS
+ANS
+
+package acadviewdemo3;
+
+
+public class Temp2 {
+
+    
+    public static void main(String[] args) 
+    {
+        int a=Integer.parseInt(args[0]);
+        int b=Integer.parseInt(args[1]);
+        System.out.println("Sum is ="+(a+b));
+      
+    }
+    
+}
+
+QUES: CREATE AN INTERFACE AND ITS METHOD
+ANS
+
+package acadviewdemo4;
+interface Animal
+{
+  
+   public void eat();
+   public void speak();
+}
+class Cat implements Animal
+{
+  
+   public void eat()
+   {
+	System.out.println("i am eating");
+   }
+   public void speak()
+   {
+	System.out.println("meawoo");
+   }
+   public static void main(String arg[])
+   {
+	Animal obj = new Cat();
+	obj.speak();
+        obj.eat();
+   }
+}
+class Dog implements Animal
+{
+  
+   public void eat()
+   {
+	System.out.println("i am eating");
+   }
+   public void speak()
+   {
+	System.out.println("bark");
+   }
+   public static void main(String arg[])
+   {
+	Animal obj = new Dog();
+	obj.speak();
+        obj.eat();
+   }
+}
